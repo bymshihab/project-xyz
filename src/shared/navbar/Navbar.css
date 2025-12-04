@@ -1,0 +1,62 @@
+/* Navbar Colors Only */
+.navbar-container {
+  background-color: #1e293b; /* slate-800 */
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-logo {
+  background-color: #fb923c; /* orange-400 */
+}
+
+.navbar-logo-text {
+  color: #1e293b; /* slate-800 */
+}
+
+.navbar-link {
+  color: white;
+}
+
+.navbar-link:hover {
+  color: #fb923c; /* orange-400 */
+}
+
+.dropdown-menu {
+  background-color: #1e293b; /* slate-800 */
+}
+
+.dropdown-submenu {
+  background-color: #1e293b; /* slate-800 */
+}
+
+.mobile-menu-button {
+  background: transparent;
+  color: white;
+}
+
+.mobile-menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-login {
+  background: transparent;
+  border-color: #fb923c; /* orange-400 */
+  color: #fb923c; /* orange-400 */
+}
+
+.btn-login:hover {
+  background-color: #fb923c; /* orange-400 */
+  color: #1e293b; /* slate-800 */
+}
+
+.btn-join {
+  background-color: #fb923c; /* orange-400 */
+  color: #1e293b; /* slate-800 */
+}
+
+.btn-join:hover {
+  background-color: #f97316; /* orange-500 */
+}
