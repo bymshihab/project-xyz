@@ -1,9 +1,7 @@
-
-import './navbar.css';
-
-const Navbar = () => {
-    return (
-        <div className="navbar-container">
+import './Nav.css';
+const Nav = () => {
+  return (
+   <div className="navbar-container">
             <div className="container mx-auto">
                 <div className="navbar px-6">
                     <div className="navbar-start">
@@ -66,7 +64,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    )
+  )
 };
 
-export default Navbar;
+export default Nav;

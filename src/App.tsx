@@ -1,19 +1,14 @@
 import './App.css'
-import Navbar from './shared/navbar/Navbar'
+import Nav from './shared/Nav/Nav'
+
 
 function App() {
 
   return (
     <>
-    <header>
-      <Navbar />
-    </header>
-    <main>
-     {/* <Hero /> */}
-     
-    </main>
-
-
+     <header>
+      <Nav />
+     </header>
     </>
   )
 }
