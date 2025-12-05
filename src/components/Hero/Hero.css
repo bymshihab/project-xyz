@@ -1,0 +1,81 @@
+/* Hero Section Colors */
+.hero-container {
+  background-color: #0f172a; /* slate-900 */
+}
+
+.hero-overlay {
+  background-color: rgba(15, 23, 42, 0.8); /* slate-900/80 */
+}
+
+.hero-title {
+  color: white;
+}
+
+.hero-accent {
+  color: #fb923c; /* orange-400 */
+}
+
+.hero-subtitle {
+  color: #e5e7eb; /* gray-200 */
+}
+
+.hero-video-bg {
+  background: linear-gradient(to right, #374151, #1f2937); /* from-gray-800 to-gray-900 */
+  background-color: #000000; /* black fallback */
+}
+
+.hero-play-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.hero-play-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-video-controls {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.hero-progress-bg {
+  background-color: #4b5563; /* gray-600 */
+}
+
+.hero-progress-bar {
+  background-color: #fb923c; /* orange-400 */
+}
+
+.hero-control-button {
+  color: white;
+}
+
+.hero-control-button:hover {
+  color: #fb923c; 
+}
+
+.hero-cta-button {
+  background-color: #fb923c; 
+  color: #0f172a; 
+}
+
+/* .hero-cta-button:hover {
+  background-color: #f97316; 
+} */
+
+.hero-float-button {
+  background-color: #fb923c; /* orange-400 */
+  color: #0f172a; /* slate-900 */
+}
+
+.hero-float-button:hover {
+  background-color: #f97316; /* orange-500 */
+}
+
+.hero-chat-button {
+  background-color: #f97316; /* orange-500 */
+  color: white;
+}
+
+.hero-chat-button:hover {
+  background-color: #ea580c; /* orange-600 */
+}

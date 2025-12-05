@@ -2,4 +2,8 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, cupcake;
 }
+@import url("https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&display=swap");
 
+.font-general {
+  font-family: "General Sans", sans-serif;
+}
