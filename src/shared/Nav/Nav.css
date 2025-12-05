@@ -1,7 +1,7 @@
 
 /* Navbar Colors Only */
 .navbar-container {
-  background-color: #1e293b; /* slate-800 */
+  background-color: #050e15; /* slate-800 */
   color: white;
 }
 
@@ -21,17 +21,30 @@
   color: white;
 }
 
-.navbar-link:hover {
-  color: #fb923c; /* orange-400 */
-}
-
 .dropdown-menu {
-  background-color: #1e293b; /* slate-800 */
+  background-color: #0f172a; /* slate-900 */
 }
 
 .dropdown-submenu {
-  background-color: #1e293b; /* slate-800 */
+  background-color: #0f172a; /* slate-900 */
 }
+
+/* Dropdown content background */
+.dropdown-content {
+  background-color: #0f172a !important; /* slate-900 */
+}
+
+/* Dropdown menu items */
+.dropdown-content li a {
+  background-color: transparent;
+  color: white;
+  padding: 8px 12px;
+}
+
+/* .dropdown-content li a:hover {
+  background-color: #dc2626 !important; 
+  color: white !important;
+} */
 
 .mobile-menu-button {
   background: transparent;
@@ -60,4 +73,69 @@
 
 .btn-join:hover {
   background-color: #f97316; /* orange-500 */
+}
+
+/* Navigation list items font size */
+.navbar li a,
+.navbar ul {
+  font-size: 18px; /* text-lg equivalent */
+  font-weight: 500;
+}
+
+/* Custom Dropdown Styles */
+.dropbtn {
+  background: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f172a; /* slate-900 */
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 50;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* .dropdown-content a:hover {
+  background-color: #dc2626; 
+  color: white;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #fb923c; /* orange-400 */
+}
+
+.dropdown:hover svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu:hover {
+  background-color: #050e15 !important; /* slate-900 */
+  color: white;
+  /* padding: 12px 16px; */
+  border-radius: 8px;
+  width: full;
 }

@@ -5,22 +5,45 @@ const Nav = () => {
             <div className="container mx-auto">
                 <div className="navbar px-6">
                     <div className="navbar-start">
-                        <div className="dropdown">
+                        <div className="dropdown dropdown-hover">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden mobile-menu-button">
                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                                 </svg>
                             </div>
-                            <ul className="menu menu-sm dropdown-content dropdown-menu rounded-box z-10 mt-3 w-52 p-2 shadow-lg">
+                            <ul tabIndex={0} className="dropdown-content menu rounded-box z-50 w-52 p-2 shadow">
                                 <li><a className="navbar-link transition-colors">Features</a></li>
                                 <li><a className="navbar-link transition-colors">Interviews</a></li>
                                 <li><a className="navbar-link transition-colors">Student Wins</a></li>
-                                <li>
-                                    <a className="navbar-link transition-colors">Courses</a>
-                                    <ul className="p-2">
-                                        <li><a className="navbar-link transition-colors">Course 1</a></li>
-                                        <li><a className="navbar-link transition-colors">Course 2</a></li>
-                                    </ul>
+                                <li className="dropdown dropdown-hover dropdown-right">
+                                    <div tabIndex={0} role="button" className="navbar-link transition-colors flex items-center gap-1">
+                                        Courses
+                                        <svg className="w-4 h-4 transition-transform duration-200 dropdown-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                    <div tabIndex={0} className="dropdown-content rounded-box z-50 w-64 p-4 shadow-lg">
+                                        <div className="space-y-3">
+                                            <div>
+                                                <h3 className="navbar-link font-semibold text-base mb-1">Copywriting</h3>
+                                            </div>
+                                            <div>
+                                                <h3 className="navbar-link font-semibold text-base mb-1">Stocks</h3>
+                                            </div>
+                                            <div>
+                                                <h3 className="navbar-link font-semibold text-base mb-1">Freelancing</h3>
+                                            </div>
+                                            <div>
+                                                <h3 className="navbar-link font-semibold text-base mb-1">Business & Finance</h3>
+                                            </div>
+                                            <div>
+                                                <h3 className="navbar-link font-semibold text-base mb-1">E-commerce</h3>
+                                            </div>
+                                            <div>
+                                                <h3 className="navbar-link font-semibold text-base mb-1">Content Creation + AI</h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li><a className="navbar-link transition-colors">About Andrew</a></li>
                             </ul>
@@ -40,14 +63,42 @@ const Nav = () => {
                             <li><a className="navbar-link transition-colors">Features</a></li>
                             <li><a className="navbar-link transition-colors">Interviews</a></li>
                             <li><a className="navbar-link transition-colors">Student Wins</a></li>
-                            <li>
-                                <details>
-                                    <summary className="navbar-link cursor-pointer transition-colors">Courses</summary>
-                                    <ul className="dropdown-submenu p-2 rounded-lg shadow-lg z-10 w-40">
-                                        <li><a className="navbar-link transition-colors">Course 1</a></li>
-                                        <li><a className="navbar-link transition-colors">Course 2</a></li>
-                                    </ul>
-                                </details>
+                            <li className="dropdown dropdown-hover dropdown-bottom dropdown-center">
+                                <div tabIndex={0} role="button" className="navbar-link cursor-pointer transition-colors flex items-center gap-1">
+                                    Courses
+                                    <svg className="w-4 h-4 transition-transform duration-200 dropdown-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <ul tabIndex={0} className="dropdown-content menu rounded-box z-50 shadow-lg" style={{ width: '500px' }}>
+                                    <div className="grid grid-cols-2 gap-8">
+                                        {/* Left Column */}
+                                        <div className="space-y-2">
+                                            <li>
+                                                <a href="#" className="dropdown-menu font-semibold text-lg">Copywriting</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown-menu font-semibold text-lg">Freelancing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown-menu font-semibold text-lg">E-commerce</a>
+                                            </li>
+                                        </div>
+                                        
+                                        {/* Right Column */}
+                                        <div className="space-y-2">
+                                            <li>
+                                                <a href="#" className="dropdown-menu font-semibold text-lg">Stocks</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown-menu font-semibold text-lg">Business & Finance</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown-menu font-semibold text-lg ">Content Creation + AI</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
                             </li>
                             <li><a className="navbar-link transition-colors">About Andrew</a></li>
                         </ul>

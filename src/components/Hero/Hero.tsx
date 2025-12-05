@@ -33,39 +33,17 @@ const Hero = () => {
           {/* Video Player Container */}
           <div className="relative max-w-4xl mx-auto mb-12">
             <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
-              {/* Video Placeholder */}
-              <div className="hero-video-bg relative w-full h-full flex items-center justify-center">
-                {/* Play Button */}
-                <button className="hero-play-button flex items-center justify-center w-20 h-20 rounded-full transition-all duration-300 group">
-                  <svg className="w-8 h-8 ml-1 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                  </svg>
-                </button>
-
-                {/* Video Controls Overlay */}
-                <div className="hero-video-controls absolute bottom-0 left-0 right-0 p-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <span className="hero-control-button text-sm">05:13</span>
-                      <div className="hero-progress-bg w-full rounded-full h-1 max-w-md">
-                        <div className="hero-progress-bar h-1 rounded-full" style={{ width: '25%' }}></div>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <button className="hero-control-button transition-colors">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.536 12.414l-4.95 2.475A1 1 0 019 14.025V9.975a1 1 0 011.586-.864l4.95 2.475a1 1 0 010 1.728z" />
-                        </svg>
-                      </button>
-                      <button className="hero-control-button transition-colors">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8V6a2 2 0 012-2h2M4 16v2a2 2 0 002 2h2m8-16h2a2 2 0 012 2v2m-4 12h2a2 2 0 002-2v-2" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <iframe 
+                title="vimeo-player" 
+                src="https://player.vimeo.com/video/902932460?h=584fce0314" 
+                width="100%" 
+                height="100%" 
+                frameBorder="0" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   
+                allowFullScreen
+                className="w-full h-full"
+              />
             </div>
           </div>
 
